@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eye Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">About Eye</a>
+  <a href="diagram.html">Interactive Diagram</a>
+  <a href="quiz.html">Eye Quiz</a>
+  <a href="tips.html">Eye Care Tips</a>
+  <a href="simulation.html">Simulation Game</a>
+</nav>
+
+<div class="hero">
+  <h1>🎮 Eye Learning Games</h1>
+  <p>Play simple games and learn how our eyes work</p>
+</div>
+
+<section class="card game-card">
+  <h2>Game 1: Focus the Light 🎯</h2>
+  <p>Goal: Make the yellow light hit the orange retina target.</p>
+
+  <div class="focus-game">
+    <div class="bulb">💡</div>
+    <div id="focusRay" class="focus-ray"></div>
+
+    <div class="focus-eye">
+      <div class="focus-lens">Lens</div>
+      <div class="focus-retina">Retina</div>
+    </div>
+  </div>
+
+  <h3 id="focusMsg">Choose the correct focus 👇</h3>
+  <button onclick="focusGame('up')">Too Up</button>
+  <button onclick="focusGame('perfect')">Perfect</button>
+  <button onclick="focusGame('down')">Too Down</button>
+</section>
+
+<section class="card game-card">
+  <h2>Game 2: Guess the Eye Part 🧠</h2>
+  <p id="guessQuestion">Which part controls the size of the pupil?</p>
+
+  <button onclick="guessPart(this, false)">Lens</button>
+  <button onclick="guessPart(this, true)">Iris</button>
+  <button onclick="guessPart(this, false)">Retina</button>
+
+  <h3 id="guessMsg">Select one answer.</h3>
+</section>
+
+<section class="card game-card">
+  <h2>Game 3: Healthy Eye Choice 👁️</h2>
+  <p>Choose the good habit for eye health.</p>
+
+  <div class="choice-box">
+    <button onclick="careChoice(false)">Rub eyes with dirty hands</button>
+    <button onclick="careChoice(true)">Take screen breaks</button>
+    <button onclick="careChoice(false)">Read in darkness</button>
+  </div>
+
+  <h3 id="careMsg">Pick the healthy habit.</h3>
+</section>
+
+<section class="card score-card">
+  <h2>⭐ Total Game Score</h2>
+  <h1 id="totalScore">0</h1>
+  <button onclick="resetAllGames()">Reset All Games</button>
+</section>
+
+<footer>
+  <p>Project by: A Naga Sai Tanooj</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

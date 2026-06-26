@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Eye Diagram</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">About Eye</a>
+  <a href="diagram.html">Interactive Diagram</a>
+  <a href="quiz.html">Eye Quiz</a>
+  <a href="tips.html">Eye Care Tips</a>
+  <a href="simulation.html">Simulation Game</a>
+</nav>
+
+<div class="hero">
+  <h1>👁️ Interactive Eye Diagram</h1>
+  <p>Click the colorful parts and learn how our eye works!</p>
+</div>
+
+<section class="card">
+
+  <h2 class="center-title">Explore the Parts of the Eye</h2>
+
+  <div class="kids-diagram">
+
+    <div class="sun-icon">☀️</div>
+    <div class="light-line"></div>
+
+    <button class="label-btn btn-cornea" onclick="showInfo('cornea')">
+      Cornea
+    </button>
+
+    <button class="label-btn btn-iris" onclick="showInfo('iris')">
+      Iris
+    </button>
+
+    <button class="label-btn btn-pupil" onclick="showInfo('pupil')">
+      Pupil
+    </button>
+
+    <button class="label-btn btn-lens" onclick="showInfo('lens')">
+      Lens
+    </button>
+
+    <button class="label-btn btn-retina" onclick="showInfo('retina')">
+      Retina
+    </button>
+
+    <button class="label-btn btn-optic" onclick="showInfo('optic')">
+      Optic Nerve
+    </button>
+
+    <div class="cartoon-eye">
+      <div class="eye-sparkle sparkle-one">✨</div>
+      <div class="eye-sparkle sparkle-two">✨</div>
+
+      <div class="iris-big">
+        <div class="pupil-big"></div>
+      </div>
+
+      <div class="lens-shape"></div>
+      <div class="retina-shape"></div>
+      <div class="optic-line"></div>
+    </div>
+
+  </div>
+
+  <div id="infoBox" class="info-box">
+    <h2>👆 Click any eye part</h2>
+    <p>Fun explanation will appear here.</p>
+  </div>
+
+</section>
+
+<section class="card">
+  <h2>How to Use This Diagram?</h2>
+
+  <div class="grid">
+    <div class="part-card">
+      <h3>1️⃣ Click</h3>
+      <p>Click any eye part button.</p>
+    </div>
+
+    <div class="part-card">
+      <h3>2️⃣ Learn</h3>
+      <p>Read the simple explanation.</p>
+    </div>
+
+    <div class="part-card">
+      <h3>3️⃣ Remember</h3>
+      <p>Connect the part with its function.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Project by: A Naga Sai Tanooj</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

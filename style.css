@@ -1,0 +1,545 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #f8fbff);
+  color: #1f2937;
+}
+
+nav {
+  background: #023e8a;
+  padding: 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #0077b6;
+}
+
+.hero {
+  text-align: center;
+  padding: 45px 20px;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 88%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.center-title {
+  text-align: center;
+  color: #023e8a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+}
+
+.part-card {
+  background: #f1faff;
+  padding: 18px;
+  border-left: 5px solid #0077b6;
+  border-radius: 14px;
+}
+
+.part-card h3 {
+  color: #0077b6;
+}
+
+button {
+  margin: 8px;
+  padding: 11px 16px;
+  border: none;
+  background: #0077b6;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #023e8a;
+}
+
+/* Attractive Kids Diagram */
+
+.kids-diagram {
+  position: relative;
+  width: 850px;
+  max-width: 100%;
+  height: 430px;
+  margin: 30px auto;
+  background: linear-gradient(135deg, #fff7d6, #dff6ff);
+  border: 4px dashed #00b4d8;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.sun-icon {
+  position: absolute;
+  left: 35px;
+  top: 170px;
+  font-size: 55px;
+  animation: sunMove 2s infinite alternate;
+}
+
+@keyframes sunMove {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); }
+}
+
+.light-line {
+  position: absolute;
+  left: 105px;
+  top: 200px;
+  width: 220px;
+  height: 6px;
+  background: yellow;
+  box-shadow: 0 0 12px orange;
+  border-radius: 20px;
+}
+
+.cartoon-eye {
+  position: absolute;
+  left: 310px;
+  top: 105px;
+  width: 400px;
+  height: 210px;
+  background: white;
+  border: 6px solid #023e8a;
+  border-radius: 50%;
+  box-shadow: inset 0 0 45px #90e0ef, 0 8px 18px rgba(0,0,0,0.18);
+  animation: eyeBlink 4s infinite;
+}
+
+@keyframes eyeBlink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.85); }
+}
+
+.iris-big {
+  position: absolute;
+  left: 145px;
+  top: 50px;
+  width: 105px;
+  height: 105px;
+  background: radial-gradient(circle, #48cae4, #0077b6);
+  border: 5px solid #023e8a;
+  border-radius: 50%;
+}
+
+.pupil-big {
+  position: absolute;
+  left: 34px;
+  top: 34px;
+  width: 35px;
+  height: 35px;
+  background: black;
+  border-radius: 50%;
+}
+
+.lens-shape {
+  position: absolute;
+  right: 70px;
+  top: 62px;
+  width: 50px;
+  height: 85px;
+  background: rgba(173, 216, 230, 0.8);
+  border: 3px solid #00b4d8;
+  border-radius: 50%;
+}
+
+.retina-shape {
+  position: absolute;
+  right: 12px;
+  top: 55px;
+  width: 20px;
+  height: 100px;
+  background: #ffb703;
+  border-radius: 15px;
+}
+
+.optic-line {
+  position: absolute;
+  right: -75px;
+  top: 93px;
+  width: 85px;
+  height: 25px;
+  background: #fb8500;
+  border-radius: 20px;
+}
+
+.eye-sparkle {
+  position: absolute;
+  font-size: 28px;
+}
+
+.sparkle-one {
+  left: 80px;
+  top: 35px;
+}
+
+.sparkle-two {
+  right: 95px;
+  top: 150px;
+}
+
+.label-btn {
+  position: absolute;
+  z-index: 10;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.btn-cornea {
+  left: 250px;
+  top: 70px;
+  background: #ff6b6b;
+}
+
+.btn-iris {
+  left: 390px;
+  top: 25px;
+  background: #4361ee;
+}
+
+.btn-pupil {
+  left: 405px;
+  bottom: 35px;
+  background: #03045e;
+}
+
+.btn-lens {
+  right: 130px;
+  top: 55px;
+  background: #06d6a0;
+}
+
+.btn-retina {
+  right: 40px;
+  top: 190px;
+  background: #f77f00;
+}
+
+.btn-optic {
+  right: 10px;
+  bottom: 45px;
+  background: #8338ec;
+}
+
+.info-box {
+  background: #e0f7fa;
+  padding: 24px;
+  border-radius: 15px;
+  text-align: center;
+  border: 3px solid #90e0ef;
+  margin-top: 25px;
+}
+
+.info-box h2 {
+  color: #0077b6;
+}
+
+/* Quiz */
+
+.question {
+  background: #f1faff;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+#score {
+  color: #0077b6;
+  text-align: center;
+}
+
+/* Tips */
+
+#tips li,
+#tipsList li {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+/* Simulation */
+
+.simulation-box {
+  position: relative;
+  height: 280px;
+  background: #f1faff;
+  border: 3px solid #0077b6;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.sun {
+  position: absolute;
+  left: 25px;
+  top: 105px;
+  font-size: 50px;
+}
+
+.ray {
+  position: absolute;
+  left: 90px;
+  width: 430px;
+  height: 5px;
+  background: yellow;
+  box-shadow: 0 0 10px orange;
+  transition: 0.5s;
+}
+
+.ray1 { top: 115px; }
+.ray2 { top: 140px; }
+.ray3 { top: 165px; }
+
+.game-eye {
+  position: absolute;
+  right: 80px;
+  top: 65px;
+  width: 230px;
+  height: 150px;
+  background: white;
+  border: 4px solid #023e8a;
+  border-radius: 50%;
+}
+
+.game-lens {
+  position: absolute;
+  left: 75px;
+  top: 35px;
+  width: 45px;
+  height: 75px;
+  background: #90e0ef;
+  border-radius: 50%;
+  border: 3px solid #0077b6;
+}
+
+.game-retina {
+  position: absolute;
+  right: 18px;
+  top: 45px;
+  width: 18px;
+  height: 60px;
+  background: orange;
+  border-radius: 10px;
+}
+
+#gameMessage,
+#gameScore {
+  text-align: center;
+  color: #0077b6;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #03045e;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 94%;
+    padding: 20px;
+  }
+
+  .kids-diagram {
+    height: 520px;
+  }
+
+  .cartoon-eye {
+    left: 60px;
+    top: 160px;
+    width: 300px;
+    height: 165px;
+  }
+
+  .iris-big {
+    left: 105px;
+    top: 38px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .pupil-big {
+    left: 27px;
+    top: 27px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .lens-shape {
+    right: 55px;
+    top: 48px;
+    height: 65px;
+  }
+
+  .sun-icon {
+    left: 30px;
+    top: 60px;
+  }
+
+  .light-line {
+    left: 100px;
+    top: 90px;
+    width: 170px;
+  }
+
+  .btn-cornea { left: 20px; top: 350px; }
+  .btn-iris { left: 130px; top: 350px; }
+  .btn-pupil { left: 230px; top: 350px; }
+  .btn-lens { left: 20px; top: 410px; }
+  .btn-retina { left: 130px; top: 410px; }
+  .btn-optic { left: 230px; top: 410px; }
+
+  .simulation-box {
+    height: 360px;
+  }
+
+  .game-eye {
+    right: 25px;
+    top: 145px;
+  }
+
+  .ray {
+    width: 250px;
+  }
+}
+.game-card {
+  text-align: center;
+}
+
+.focus-game {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(135deg, #fff7d6, #dff6ff);
+  border: 4px solid #00b4d8;
+  border-radius: 25px;
+  margin: 25px auto;
+  overflow: hidden;
+}
+
+.bulb {
+  position: absolute;
+  left: 40px;
+  top: 125px;
+  font-size: 55px;
+}
+
+.focus-ray {
+  position: absolute;
+  left: 105px;
+  top: 150px;
+  width: 560px;
+  height: 8px;
+  background: yellow;
+  box-shadow: 0 0 15px orange;
+  border-radius: 20px;
+  transform-origin: left center;
+  transition: 0.5s;
+}
+
+.focus-eye {
+  position: absolute;
+  right: 50px;
+  top: 70px;
+  width: 260px;
+  height: 160px;
+  background: white;
+  border: 5px solid #023e8a;
+  border-radius: 50%;
+}
+
+.focus-lens {
+  position: absolute;
+  left: 70px;
+  top: 45px;
+  width: 60px;
+  height: 75px;
+  background: #90e0ef;
+  border: 3px solid #0077b6;
+  border-radius: 50%;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+.focus-retina {
+  position: absolute;
+  right: 18px;
+  top: 45px;
+  width: 60px;
+  height: 70px;
+  background: orange;
+  color: white;
+  border-radius: 15px;
+  padding-top: 22px;
+  font-weight: bold;
+}
+
+#focusMsg,
+#guessMsg,
+#careMsg {
+  color: #0077b6;
+}
+
+.choice-box button {
+  display: block;
+  margin: 12px auto;
+  width: 260px;
+}
+
+.score-card {
+  text-align: center;
+  background: #fff7d6;
+}
+
+#totalScore {
+  font-size: 50px;
+  color: #0077b6;
+}

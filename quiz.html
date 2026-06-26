@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eye Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">About Eye</a>
+  <a href="diagram.html">Interactive Diagram</a>
+  <a href="quiz.html">Eye Quiz</a>
+  <a href="tips.html">Eye Care Tips</a>
+  <a href="simulation.html">Simulation Game</a>
+</nav>
+
+<div class="hero">
+  <h1>🧠 Eye Quiz</h1>
+  <p>Answer the questions and test your knowledge about the human eye!</p>
+</div>
+
+<section class="card">
+
+  <div class="question">
+    <p>1. Which part controls the size of the pupil?</p>
+    <button onclick="checkAnswer(this, false)">Iris</button>
+    <button onclick="checkAnswer(this, true)">Lens</button>
+  </div>
+
+  <div class="question">
+    <p>2. Which part sends signals to the brain?</p>
+    <button onclick="checkAnswer(this, true)">Optic Nerve</button>
+    <button onclick="checkAnswer(this, false)">Cornea</button>
+  </div>
+
+  <div class="question">
+    <p>3. Which part focuses light on the retina?</p>
+    <button onclick="checkAnswer(this, true)">Lens</button>
+    <button onclick="checkAnswer(this, false)">Pupil</button>
+  </div>
+
+  <div class="question">
+    <p>4. Which part converts light into nerve signals?</p>
+    <button onclick="checkAnswer(this, false)">Retina</button>
+    <button onclick="checkAnswer(this, true)">Iris</button>
+  </div>
+
+  <div class="question">
+    <p>5. Which part gives colour to the eye?</p>
+    <button onclick="checkAnswer(this, true)">Iris</button>
+    <button onclick="checkAnswer(this, false)">Optic Nerve</button>
+  </div>
+
+  <div class="question">
+    <p>6. Light enters the eye through which part?</p>
+    <button onclick="checkAnswer(this, false)">Pupil</button>
+    <button onclick="checkAnswer(this, true)">Retina</button>
+  </div>
+
+  <div class="question">
+    <p>7. Which part protects the front of the eye?</p>
+    <button onclick="checkAnswer(this, true)">Cornea</button>
+    <button onclick="checkAnswer(this, false)">Lens</button>
+  </div>
+
+  <div class="question">
+    <p>8. Which cells help us see colours?</p>
+    <button onclick="checkAnswer(this, true)">Cones</button>
+    <button onclick="checkAnswer(this, false)">Rods</button>
+  </div>
+
+  <div class="question">
+    <p>9. Which cells help us see in dim light?</p>
+    <button onclick="checkAnswer(this, false)">Rods</button>
+    <button onclick="checkAnswer(this, true)">Cones</button>
+  </div>
+
+  <div class="question">
+    <p>10. Which organ understands visual signals?</p>
+    <button onclick="checkAnswer(this, false)">Brain</button>
+    <button onclick="checkAnswer(this, true)">Heart</button>
+  </div>
+
+  <h2 id="score">Score: 0 / 10</h2>
+
+</section>
+
+<footer>
+  <p>Project by: A Naga Sai Tanooj</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
